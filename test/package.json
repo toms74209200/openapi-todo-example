@@ -1,0 +1,13 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "author": "toms74209200",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.42.1"
+  },
+  "scripts": {
+    "test": "playwright test"
+  }
+}
