@@ -1,0 +1,22 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node-terminal",
+            "internalConsoleOptions": "neverOpen",
+            "request": "launch",
+            "name": "Launch Preview",
+            "command": "redocly preview-docs ${workspaceFolder}/reference/spec.yaml",
+        },
+        {
+            "type": "node-terminal",
+            "internalConsoleOptions": "neverOpen",
+            "request": "launch",
+            "name": "Launch Mock Server",
+            "command": "prism mock ${workspaceFolder}/reference/spec.yaml",
+        }
+    ]
+}
