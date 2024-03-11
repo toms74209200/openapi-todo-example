@@ -7,7 +7,7 @@ info:
   contact:
     name: toms74209200
     url: 'https://github.com/toms74209200/openapi-todo-example'
-  description: TODO application Web API sample using by OpenAPI Specification
+  description: TODO application Web API example using by OpenAPI Specification
   license:
     name: MIT
     url: 'https://raw.githubusercontent.com/toms74209200/openapi-todo-example/3bd8959fcf6b0e2601bbe11f3a2803898ea84d24/LICENSE'
