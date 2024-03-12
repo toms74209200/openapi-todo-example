@@ -22,8 +22,6 @@ paths:
   /users:
     post:
       operationId: postUsers
-      tags:
-        - users
       summary: ユーザー登録API
       description: ユーザーを登録する。
       requestBody:
