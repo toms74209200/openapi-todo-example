@@ -12,10 +12,18 @@ permissions:
   id-token: write
 
 jobs:
+  lint:
+    uses: ./.github/workflows/lint-spec.yml
+  test:
+    needs:
+      - lint
+    uses: ./.github/workflows/test-spec.yml
+
   build:
     runs-on: ubuntu-latest
     environment: github-pages
-
+    needs:
+      - test
     steps:
       - name: Clone repository
         uses: actions/checkout@v4
