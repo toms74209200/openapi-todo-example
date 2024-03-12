@@ -1,0 +1,24 @@
+name: Test OpenAPI Specification Mock Server
+
+on:
+  workflow_call:
+
+env:
+  PORT: 4010
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install dependencies
+        run: npm install -g @stoplight/prism-cli
+      - name: Launch Prism
+        run: prism mock -p ${{ env.PORT }} reference/spec.yaml
+      - name: Install dependencies for tests
+        run: npm install
+        working-directory: test
+      - name: Run tests
+        run: npm test
+        working-directory: test
