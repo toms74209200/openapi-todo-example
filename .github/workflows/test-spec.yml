@@ -7,7 +7,7 @@ env:
   PORT: 4010
 
 jobs:
-  lint:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
