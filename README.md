@@ -9,6 +9,7 @@ TODO application Web API example using by OpenAPI Specification
 ### Installed in devcontainer
 
 - Node.js
+- [Spectral](https://stoplight.io/open-source/spectral)
 - [Redocly](https://redocly.com/)
 - [Prism](https://stoplight.io/open-source/prism)
 - [Playwright](https://playwright.dev/)
