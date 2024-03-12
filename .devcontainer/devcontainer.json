@@ -12,14 +12,15 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "npm i -g @redocly/cli @stoplight/prism-cli",
+	"postCreateCommand": "npm i -g @redocly/cli @stoplight/prism-cli @stoplight/spectral-cli",
 
 	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
 			"extensions": [
 				"esbenp.prettier-vscode",
-				"ms-playwright.playwright"
+				"ms-playwright.playwright",
+				"stoplight.spectral"
 			]
 		}
 	},
