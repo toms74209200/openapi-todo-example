@@ -21,6 +21,8 @@ tags:
 paths:
   /users:
     post:
+      tags:
+        - users
       operationId: postUsers
       summary: ユーザー登録API
       description: ユーザーを登録する。
@@ -31,6 +33,13 @@ paths:
           $ref: '#/components/responses/postUsersResponse'
         '400':
           description: Bad Request
+  /test:
+    get:
+      summary: テストAPI
+      description: テストAPI
+      responses:
+        '200':
+          description: OK
   /auth:
     post:
       operationId: postAuth
