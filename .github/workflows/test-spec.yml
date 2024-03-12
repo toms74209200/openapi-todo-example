@@ -15,7 +15,7 @@ jobs:
       - name: Install dependencies
         run: npm install -g @stoplight/prism-cli
       - name: Launch Prism
-        run: prism mock -p ${{ env.PORT }} reference/spec.yaml
+        run: prism mock -p ${{ env.PORT }} reference/spec.yaml &
       - name: Install dependencies for tests
         run: npm install
         working-directory: test
